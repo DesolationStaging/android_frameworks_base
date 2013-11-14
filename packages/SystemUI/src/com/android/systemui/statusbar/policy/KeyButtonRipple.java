@@ -83,6 +83,10 @@ public class KeyButtonRipple extends Drawable {
         return mRipplePaint;
     }
 
+    public void setColor(int color) {
+        mRippleColor = color;
+    }
+
     private void drawSoftware(Canvas canvas) {
         if (mGlowAlpha > 0f) {
             final Paint p = getRipplePaint();
